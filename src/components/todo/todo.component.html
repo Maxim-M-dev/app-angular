@@ -1,0 +1,10 @@
+<h1>Value: {{name}}</h1>
+<ul>
+  <todoItem-comp *ngFor="let item of items" [item]="item.text" (click)="onChange(item)"></todoItem-comp>
+</ul>
+<input type="text" [(ngModel)]="name"/>
+<button class="add" (click)="addItem(name)">Add</button>
+<div class="line"></div>
+<ul>
+
+</ul>

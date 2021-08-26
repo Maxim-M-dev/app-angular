@@ -1,0 +1,8 @@
+<li class="item" [class.isChecked]="isChecked">
+    <div>Date: {{generate()}}</div>
+  <input class="checkbox" type="checkbox" (click)="checkedItem(isChecked)"/>
+  {{item}}
+  <span>
+    <button class="delete" (click)="deleteItem(1)">&times;</button>
+  </span>
+</li>
